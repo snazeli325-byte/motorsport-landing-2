@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autosport 360</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Переключатель языка -->
+  <button id="lang-toggle" class="btn alt">🇬🇧 English / Русский 🇷🇺</button>
+
+  <!-- Английская версия -->
+  <div id="lang-en">
+    <section class="hero">
+      <div class="power-container">
+        <h1>Feel the Power of Racing</h1>
+      </div>
+      <div class="power-subtext">
+        <p>Join the adrenaline. Push your limits.</p>
+      </div>
+      <div class="center-btn">
+        <a href="#about" class="btn">Join Now</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="glass-container center-content">
+        <h2>About Us</h2>
+        <p>Autosport 360 is a community for motorsport enthusiasts.</p>
+        <div class="center-btn">
+          <a href="#events" class="btn">Explore Events</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="events" id="events">
+      <div class="glass-container">
+        <div class="countdown-timer">
+          <h3>Next Race Starts In:</h3>
+          <div id="timer">
+            <span id="days">00</span>d :
+            <span id="hours">00</span>h :
+            <span id="minutes">00</span>m :
+            <span id="seconds">00</span>s
+          </div>
+        </div>
+
+        <h2>Upcoming Events</h2>
+        <ul>
+          <li>🏎️ August 10 — Summer Track Heat</li>
+          <li>🏁 September 5 — Speed Legends Showdown</li>
+          <li>🚦 October 3 — Night Fury Grand Prix</li>
+        </ul>
+        <div class="center-btn">
+          <a href="#drivers" class="btn">Meet Our Drivers</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="drivers" id="drivers">
+      <div class="glass-container">
+        <h2>Featured Drivers</h2>
+        <div class="driver-card">
+          <img src="driver1.jpg" alt="Alex Blaze" />
+          <h3>Alex Blaze</h3>
+          <p>Champion of Speed Cup 2024</p>
+        </div>
+        <div class="driver-card">
+          <img src="driver2.webp" alt="Maya Velocity" />
+          <h3>Maya Velocity</h3>
+          <p>Top finisher of Urban Drift 2023</p>
+        </div>
+        <div class="center-btn">
+          <a href="#contact" class="btn">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="register-section">
+      <h2>Register for the Event</h2>
+      <form id="eventForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="event">Select a Race:</label>
+        <select id="event" name="event" required>
+          <option value="">-- Select --</option>
+          <option value="urban-drift">Urban Drift</option>
+          <option value="circuit-masters">Circuit Masters</option>
+          <option value="night-track">Night Track</option>
+        </select>
+
+        <label for="language">Preferred Language:</label>
+        <select id="language" name="language" required>
+          <option value="en">English</option>
+          <option value="ru">Russian</option>
+        </select>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="glass-container">
+        <h2>Contact Us</h2>
+        <form>
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="5" required></textarea>
+          <div class="center-btn">
+            <button type="submit" class="btn contact-btn">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#" class="btn"><img src="insta.png" alt="Instagram" class="icon" />Instagram</a>
+        <a href="#" class="btn"><img src="youtube.png" alt="YouTube" class="icon" />YouTube</a>
+        <a href="#" class="btn"><img src="tiktok.png" alt="TikTok" class="icon" />TikTok</a>
+        <a href="#" class="btn"><img src="privacy-dashboard.svg" alt="Privacy" class="icon" />Privacy Policy</a>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Русская версия -->
+  <div id="lang-ru">
+    <section class="hero">
+      <div class="power-container">
+        <h1>Почувствуй Силу Гонок</h1>
+      </div>
+      <div class="power-subtext">
+        <p>Присоединяйся к адреналину. Преодолей свои границы.</p>
+      </div>
+      <div class="center-btn">
+        <a href="#about" class="btn">Присоединиться</a>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="glass-container center-content">
+        <h2>О Нас</h2>
+        <p>Autosport 360 — это сообщество для поклонников автоспорта.</p>
+        <div class="center-btn">
+          <a href="#events" class="btn">Смотреть События</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="events" id="events">
+      <div class="glass-container">
+        <div class="countdown-timer">
+          <h3>До следующей гонки осталось:</h3>
+          <div id="timer">
+            <span id="days">00</span>д :
+            <span id="hours">00</span>ч :
+            <span id="minutes">00</span>м :
+            <span id="seconds">00</span>с
+          </div>
+        </div>
+
+        <h2>Предстоящие События</h2>
+        <ul>
+          <li>🏎️ 10 августа — Летний Жар Трассы</li>
+          <li>🏁 5 сентября — Схватка Легенд Скорости</li>
+          <li>🚦 3 октября — Ночная Ярость Гран-При</li>
+        </ul>
+        <div class="center-btn">
+          <a href="#drivers" class="btn">Наши Пилоты</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="drivers" id="drivers">
+      <div class="glass-container">
+        <h2>Избранные Пилоты</h2>
+        <div class="driver-card">
+          <img src="driver1.jpg" alt="Алекс Блейз" />
+          <h3>Алекс Блейз</h3>
+          <p>Чемпион Speed Cup 2024</p>
+        </div>
+        <div class="driver-card">
+          <img src="driver2.webp" alt="Майя Велосити" />
+          <h3>Майя Велосити</h3>
+          <p>Финалистка Urban Drift 2023</p>
+        </div>
+        <div class="center-btn">
+          <a href="#contact" class="btn">Связаться</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="register-section">
+      <h2>Регистрация на Событие</h2>
+      <form id="eventForm">
+        <label for="name">Ваше Имя:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Ваш Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="event">Выберите Гонку:</label>
+        <select id="event" name="event" required>
+          <option value="">-- Выбрать --</option>
+          <option value="urban-drift">Urban Drift</option>
+          <option value="circuit-masters">Мастера Трассы</option>
+          <option value="night-track">Ночная Трасса</option>
+        </select>
+
+        <label for="language">Предпочтительный Язык:</label>
+        <select id="language" name="language" required>
+          <option value="en">Английский</option>
+          <option value="ru">Русский</option>
+        </select>
+
+        <button type="submit" class="btn">Отправить</button>
+      </form>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="glass-container">
+        <h2>Свяжитесь с Нами</h2>
+        <form>
+          <input type="text" placeholder="Ваше Имя" required />
+          <input type="email" placeholder="Ваш Email" required />
+          <textarea placeholder="Ваше Сообщение" rows="5" required></textarea>
+          <div class="center-btn">
+            <button type="submit" class="btn contact-btn">Отправить Сообщение</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-links">
+        <a href="#" class="btn"><img src="insta.png" alt="Instagram" class="icon" />Instagram</a>
+        <a href="#" class="btn"><img src="youtube.png" alt="YouTube" class="icon" />YouTube</a>
+        <a href="#" class="btn"><img src="tiktok.png" alt="TikTok" class="icon" />TikTok</a>
+        <a href="#" class="btn"><img src="privacy-dashboard.svg" alt="Политика" class="icon" />Политика</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
